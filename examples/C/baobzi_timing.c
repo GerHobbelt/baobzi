@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-struct timespec get_wtime() {
+struct timespec get_wtime(void) {
     struct timespec ts;
     clock_gettime(CLOCK_MONOTONIC, &ts);
     return ts;
